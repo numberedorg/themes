@@ -1,15 +1,25 @@
 :root {
-  --dashboard-bg: linear-gradient(120deg, #1a0000 0%, #2a0000 100%);
-  --dashboard-card-bg: rgba(30,0,0,0.92);
+  --dashboard-bg: linear-gradient(120deg, #1a1a1a 0%, #2a0000 100%);
+  --dashboard-card-bg: #18181c;
   --dashboard-card-border: #ff2222;
-  --dashboard-card-shadow: 0 2px 16px 0 rgba(255,0,0,0.18);
+  --dashboard-card-shadow: 0 2px 16px 0 rgba(255,34,34,0.13);
   --dashboard-card-radius: 20px;
   --dashboard-card-text: #fff;
   --dashboard-card-title: #ff2222;
-  --dashboard-weather-card-bg: linear-gradient(120deg, #2a0000 70%, #1a0000 100%);
-  --dashboard-deadline-card-bg: linear-gradient(120deg, #330000 60%, #ff2222 100%);
-  --dashboard-faq-card-bg: linear-gradient(120deg, #1a0000 60%, #2a0000 100%);
+  --dashboard-weather-card-bg: linear-gradient(120deg, #2a0000 70%, #1a1a1a 100%);
+  --dashboard-deadline-card-bg: linear-gradient(120deg, #2a0000 60%, #ff2222 100%);
+  --dashboard-faq-card-bg: linear-gradient(120deg, #1a1a1a 60%, #2a0000 100%);
   --dashboard-greeting-text: #ff2222;
-  --dashboard-titlebar-bg: #1a0000;
-  --dashboard-titlebar-text: #ff2222;
+  --dashboard-titlebar-bg: #1a1a1a;
+  --dashboard-titlebar-text: #fff;
+  --dashboard-text-main: #fff;         /* General text */
+  --dashboard-text-muted: #b0b0b0;     /* Muted/secondary text */
+  --dashboard-text-link: #ff2222;      /* Links */
+  --dashboard-text-title: #ff2222;     /* Card titles */
+  --dashboard-text-success: #4caf50;   /* Success (e.g., Email Synced) */
+  --dashboard-text-error: #ff5555;     /* Error (e.g., Email Not Synced) */
+  --dashboard-text-warning: #ffb300;   /* Warnings/deadlines */
+  --dashboard-text-support: #fff;      /* Support card */
+  --dashboard-text-faq: #fff;          /* FAQ card */
+  --dashboard-text-beta: #ff2222;      /* Beta badge */
 }
