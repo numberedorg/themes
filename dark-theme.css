@@ -1,1 +1,15 @@
-
+:root {
+  --dashboard-bg: linear-gradient(120deg, #1a0000 0%, #2a0000 100%);
+  --dashboard-card-bg: rgba(30,0,0,0.92);
+  --dashboard-card-border: #ff2222;
+  --dashboard-card-shadow: 0 2px 16px 0 rgba(255,0,0,0.18);
+  --dashboard-card-radius: 20px;
+  --dashboard-card-text: #fff;
+  --dashboard-card-title: #ff2222;
+  --dashboard-weather-card-bg: linear-gradient(120deg, #2a0000 70%, #1a0000 100%);
+  --dashboard-deadline-card-bg: linear-gradient(120deg, #330000 60%, #ff2222 100%);
+  --dashboard-faq-card-bg: linear-gradient(120deg, #1a0000 60%, #2a0000 100%);
+  --dashboard-greeting-text: #ff2222;
+  --dashboard-titlebar-bg: #1a0000;
+  --dashboard-titlebar-text: #ff2222;
+}
