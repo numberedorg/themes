@@ -1,0 +1,13 @@
+:root {
+  /* Dark theme for Numbered Org dashboard/cards */
+  --dashboard-bg: linear-gradient(120deg, #23243a 0%, #18192a 60%, #23243a 100%);
+  --dashboard-card-bg: rgba(34, 36, 58, 0.98);
+  --dashboard-card-border: #35376a;
+  --dashboard-card-shadow: 0 2px 16px 0 rgba(20,20,40,0.25);
+  --dashboard-card-radius: 20px;
+  --dashboard-card-text: #e6e6fa;
+  --dashboard-card-title: #a7a6ff;
+  --dashboard-weather-card-bg: linear-gradient(120deg, #35376a 70%, #23243a 100%);
+  --dashboard-deadline-card-bg: linear-gradient(120deg, #2d2e4a 60%, #a7a6ff 100%);
+  --dashboard-faq-card-bg: linear-gradient(120deg, #23243a 60%, #35376a 100%);
+}
