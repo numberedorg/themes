@@ -1,25 +1,55 @@
 :root {
   --dashboard-bg: linear-gradient(120deg, #1a1a1a 0%, #2a0000 100%);
-  --dashboard-card-bg: #18181c;
-  --dashboard-card-border: #ff2222;
-  --dashboard-card-shadow: 0 2px 16px 0 rgba(255,34,34,0.13);
+  --dashboard-card-bg: #1a1a1a;
+  --dashboard-card-border: #ff2d2d;
+  --dashboard-card-shadow: 0 2px 16px 0 rgba(255,45,45,0.18);
   --dashboard-card-radius: 20px;
   --dashboard-card-text: #fff;
-  --dashboard-card-title: #ff2222;
+  --dashboard-card-title: #ff2d2d;
   --dashboard-weather-card-bg: linear-gradient(120deg, #2a0000 70%, #1a1a1a 100%);
-  --dashboard-deadline-card-bg: linear-gradient(120deg, #2a0000 60%, #ff2222 100%);
+  --dashboard-deadline-card-bg: linear-gradient(120deg, #2a0000 60%, #ff2d2d 100%);
   --dashboard-faq-card-bg: linear-gradient(120deg, #1a1a1a 60%, #2a0000 100%);
-  --dashboard-greeting-text: #ff2222;
-  --dashboard-titlebar-bg: #1a1a1a;
+  --dashboard-greeting-text: #ff2d2d;
+  --dashboard-titlebar-bg: rgba(30,0,0,0.92);
   --dashboard-titlebar-text: #fff;
-  --dashboard-text-main: #fff;         /* General text */
-  --dashboard-text-muted: #b0b0b0;     /* Muted/secondary text */
-  --dashboard-text-link: #ff2222;      /* Links */
-  --dashboard-text-title: #ff2222;     /* Card titles */
-  --dashboard-text-success: #4caf50;   /* Success (e.g., Email Synced) */
-  --dashboard-text-error: #ff5555;     /* Error (e.g., Email Not Synced) */
-  --dashboard-text-warning: #ffb300;   /* Warnings/deadlines */
-  --dashboard-text-support: #fff;      /* Support card */
-  --dashboard-text-faq: #fff;          /* FAQ card */
-  --dashboard-text-beta: #ff2222;      /* Beta badge */
+  --dashboard-text-main: #fff;
+  --dashboard-text-muted: #ffb3b3;
+  --dashboard-text-link: #ff2d2d;
+  --dashboard-text-title: #ff2d2d;
+  --dashboard-text-success: #4caf50;
+  --dashboard-text-error: #ff2d2d;
+  --dashboard-text-warning: #ffb300;
+  --dashboard-text-support: #fff;
+  --dashboard-text-faq: #fff;
+  --dashboard-text-beta: #ff2d2d;
+}
+
+/* Card title overrides (optional, for custom names) */
+.dashboard-card-title-profile::before {
+  content: var(--dashboard-card-title-profile, "Profile");
+}
+.dashboard-card-title-beta::before {
+  content: var(--dashboard-card-title-beta, "Beta Tester");
+}
+.dashboard-card-title-weather::before {
+  content: var(--dashboard-card-title-weather, "Current Weather");
+}
+.dashboard-card-title-settings::before {
+  content: var(--dashboard-card-title-settings, "Settings");
+}
+.dashboard-card-title-support::before {
+  content: var(--dashboard-card-title-support, "Support");
+}
+.dashboard-card-title-deadline::before {
+  content: var(--dashboard-card-title-deadline, "Upcoming Deadline");
+}
+.dashboard-card-title-faq::before {
+  content: var(--dashboard-card-title-faq, "FAQ");
+}
+
+/* Hide default text if using ::before for card titles */
+.dashboard-card-title::before {
+  display: block;
+  font: inherit;
+  color: inherit;
 }
