@@ -1,55 +1,125 @@
 :root {
   --dashboard-bg: linear-gradient(120deg, #1a1a1a 0%, #2a0000 100%);
-  --dashboard-card-bg: #1a1a1a;
+  --dashboard-card-bg: rgba(30, 0, 0, 0.92);
   --dashboard-card-border: #ff2d2d;
-  --dashboard-card-shadow: 0 2px 16px 0 rgba(255,45,45,0.18);
+  --dashboard-card-shadow: 0 2px 16px 0 rgba(255,45,45,0.13);
   --dashboard-card-radius: 20px;
   --dashboard-card-text: #fff;
   --dashboard-card-title: #ff2d2d;
   --dashboard-weather-card-bg: linear-gradient(120deg, #2a0000 70%, #1a1a1a 100%);
   --dashboard-deadline-card-bg: linear-gradient(120deg, #2a0000 60%, #ff2d2d 100%);
   --dashboard-faq-card-bg: linear-gradient(120deg, #1a1a1a 60%, #2a0000 100%);
-  --dashboard-greeting-text: #ff2d2d;
-  --dashboard-titlebar-bg: rgba(30,0,0,0.92);
-  --dashboard-titlebar-text: #fff;
+  --dashboard-greeting-text: #fff;
+  --dashboard-titlebar-bg: rgba(30,0,0,0.82);
+  --dashboard-titlebar-text: #ff2d2d;
   --dashboard-text-main: #fff;
   --dashboard-text-muted: #ffb3b3;
   --dashboard-text-link: #ff2d2d;
   --dashboard-text-title: #ff2d2d;
   --dashboard-text-success: #4caf50;
   --dashboard-text-error: #ff2d2d;
-  --dashboard-text-warning: #ffb300;
+  --dashboard-text-warning: #ffb347;
   --dashboard-text-support: #fff;
   --dashboard-text-faq: #fff;
   --dashboard-text-beta: #ff2d2d;
+
+  /* Card name variables for ::before overrides */
+  --dashboard-card-title-profile: "My Profile";
+  --dashboard-card-title-beta: "Beta Access";
+  --dashboard-card-title-weather: "Weather";
+  --dashboard-card-title-settings: "Preferences";
+  --dashboard-card-title-support: "Help & Support";
+  --dashboard-card-title-deadline: "Next Deadline";
+  --dashboard-card-title-faq: "FAQ & Help";
 }
 
-/* Card title overrides (optional, for custom names) */
+/* Card title overrides using ::before and hiding default text */
+.dashboard-card-title {
+  color: transparent !important;
+  position: relative;
+  user-select: none;
+}
 .dashboard-card-title-profile::before {
-  content: var(--dashboard-card-title-profile, "Profile");
+  content: var(--dashboard-card-title-profile, "");
+  color: var(--dashboard-card-title, #ff2d2d);
+  text-shadow: 0 1px 6px #ffb3b3;
+  font-weight: 900;
+  font-size: 1.28em;
+  letter-spacing: 0.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: text;
 }
 .dashboard-card-title-beta::before {
   content: var(--dashboard-card-title-beta, "Beta Tester");
+  color: var(--dashboard-card-title, #ff2d2d);
+  text-shadow: 0 1px 6px #ffb3b3;
+  font-weight: 900;
+  font-size: 1.18em;
+  letter-spacing: 0.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: text;
 }
 .dashboard-card-title-weather::before {
-  content: var(--dashboard-card-title-weather, "Current Weather");
+  content: var(--dashboard-card-title-weather, "");
+  color: var(--dashboard-card-title, #ff2d2d);
+  text-shadow: 0 1px 6px #ffb3b3;
+  font-weight: 900;
+  font-size: 1.22em;
+  letter-spacing: 0.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: text;
 }
 .dashboard-card-title-settings::before {
   content: var(--dashboard-card-title-settings, "Settings");
+  color: var(--dashboard-card-title, #ff2d2d);
+  text-shadow: 0 1px 6px #ffb3b3;
+  font-weight: 900;
+  font-size: 1.18em;
+  letter-spacing: 0.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: text;
 }
 .dashboard-card-title-support::before {
-  content: var(--dashboard-card-title-support, "Support");
+  content: var(--dashboard-card-title-support, "");
+  color: var(--dashboard-card-title, #ff2d2d);
+  text-shadow: 0 1px 6px #ffb3b3;
+  font-weight: 900;
+  font-size: 1.18em;
+  letter-spacing: 0.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: text;
 }
 .dashboard-card-title-deadline::before {
-  content: var(--dashboard-card-title-deadline, "Upcoming Deadline");
+  content: var(--dashboard-card-title-deadline, "");
+  color: var(--dashboard-card-title, #ff2d2d);
+  text-shadow: 0 1px 6px #ffb3b3;
+  font-weight: 900;
+  font-size: 1.18em;
+  letter-spacing: 0.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: text;
 }
 .dashboard-card-title-faq::before {
-  content: var(--dashboard-card-title-faq, "FAQ");
-}
-
-/* Hide default text if using ::before for card titles */
-.dashboard-card-title::before {
-  display: block;
-  font: inherit;
-  color: inherit;
+  content: var(--dashboard-card-title-faq, "");
+  color: var(--dashboard-card-title, #ff2d2d);
+  text-shadow: 0 1px 6px #ffb3b3;
+  font-weight: 900;
+  font-size: 1.18em;
+  letter-spacing: 0.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  user-select: text;
 }
